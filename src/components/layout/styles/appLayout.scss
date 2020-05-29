@@ -1,0 +1,96 @@
+$fbSize: 1080px;
+$fbHalf: $fbSize/2;
+$fbQuarter: $fbSize/4;
+$fbFontSize: 2em;
+$googWidth: 600px;
+$googHeight: 314px;
+$googMedRectWidth: 300px;
+$googMedRectHeight: 250px;
+
+/* Color Theme Swatches in Hex */
+$Copy-of-Material-2-1-hex: #027367;
+$Copy-of-Material-2-2-hex: #7abfb3;
+$Copy-of-Material-2-3-hex: #f2e4bb;
+$Copy-of-Material-2-4-hex: #f2ab27;
+$Copy-of-Material-2-5-hex: #bf1f1f;
+
+/* Color Theme Swatches in RGBA */
+$Copy-of-Material-2-1-rgba: rgba(2, 114, 103, 1);
+$Copy-of-Material-2-2-rgba: rgba(121, 191, 179, 1);
+$Copy-of-Material-2-3-rgba: rgba(242, 228, 186, 1);
+$Copy-of-Material-2-4-rgba: rgba(242, 170, 38, 1);
+$Copy-of-Material-2-5-rgba: rgba(191, 31, 31, 1);
+
+/* Color Theme Swatches in HSLA */
+$Copy-of-Material-2-1-hsla: hsla(173, 96, 22, 1);
+$Copy-of-Material-2-2-hsla: hsla(169, 35, 61, 1);
+$Copy-of-Material-2-3-hsla: hsla(44, 67, 84, 1);
+$Copy-of-Material-2-4-hsla: hsla(39, 88, 55, 1);
+$Copy-of-Material-2-5-hsla: hsla(0, 72, 43, 1);
+
+h6 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  padding: 0.5rem;
+  color: #28403c;
+  font-weight: 800;
+}
+
+.gridTile {
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 0 !important;
+  .thumbnail {
+    transition: 0.2s;
+  }
+  &:hover {
+    .thumbnail {
+      transform: scale(1.1);
+    }
+    overflow: hidden;
+    z-index: 1000;
+  }
+}
+
+.searchBar {
+  width: 300px;
+  height: 55px;
+  background: white;
+  border-radius: 4px;
+  margin: 0 auto;
+  input {
+    height: 50px;
+    padding: 0 25px 0 55px;
+  }
+  input:focus {
+    height: 100%;
+    border: 2px solid #7abfb3;
+    border-radius: 4px;
+    background: rgba(122, 191, 179, 0.1);
+  }
+  button {
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    padding: 0;
+    border-radius: 4px !important;
+    z-index: 100;
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+}
+
+.appContainer {
+  background: #c7b3af1a;
+  display: flex;
+  height: 100vh !important;
+  justify-content: space-between;
+}
+
+.searchContainer {
+  position: relative;
+  margin: 0 auto;
+  overflow-y: scroll;
+}

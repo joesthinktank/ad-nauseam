@@ -1,0 +1,17 @@
+#sidebar {
+  display: flex;
+  height: 100vh;
+  #sidebarNav {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    background: #3e736a;
+  }
+  #sidebarContents {
+    background: rgba(122, 191, 179, 0.4);
+    width: 400px;
+    flex-direction: column;
+    justify-content: initial;
+    overflow-y: scroll;
+  }
+}

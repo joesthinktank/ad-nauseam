@@ -1,0 +1,96 @@
+$fbSize: 1080px;
+$fbHalf: $fbSize/2;
+$fbQuarter: $fbSize/4;
+$fbFontSize: 48px;
+$googWidth: 600px;
+$googHeight: 314px;
+$googMedRectWidth: 300px;
+$googMedRectHeight: 250px;
+
+.adsContainer {
+  flex-direction: column;
+  height: 100vh;
+  float: left;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  h6 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    padding: 0.5rem;
+    color: #28403c;
+    background-color: #79bfb3;
+    font-weight: 800;
+  }
+}
+
+.adImageDisplay {
+  margin: 1em 0 1em 0;
+  position: relative;
+  display: inline-table;
+  font-weight: 700;
+  text-align: left;
+  background: #f4f4f4;
+  transition: 0.3s;
+  overflow: hidden;
+  // border-radius: 8px;
+  &:hover {
+    -webkit-box-shadow: 0px 0px 48px 16px rgba(2, 115, 103, 0.12),
+      0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 48px 16px rgba(2, 115, 103, 0.12),
+      0px 0px 12px 4px rgba(0, 0, 0, 0.15);
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    overflow: hidden;
+    .landscape {
+      height: initial !important;
+      width: 100% !important;
+      object-fit: contain !important;
+    }
+    .portrait {
+      height: 100% !important;
+      width: initial !important;
+      object-fit: contain !important;
+    }
+  }
+  .sm {
+    width: $fbQuarter;
+    height: $fbQuarter;
+    font-size: $fbFontSize/2;
+  }
+  .md {
+    width: $fbHalf;
+    height: $fbHalf;
+    font-size: $fbFontSize;
+  }
+  .lg {
+    width: $fbSize;
+    height: $fbSize;
+    font-size: $fbFontSize * 2;
+  }
+  .googleImageDisplay {
+    width: $googWidth/2;
+    height: $googHeight/2;
+    font-size: $fbFontSize/2;
+  }
+  .googMedRect {
+    width: $googMedRectWidth;
+    height: $googMedRectHeight;
+    font-size: $fbFontSize/2;
+  }
+}
+
+.adCopy {
+  z-index: 1000;
+  position: absolute;
+  margin: 0;
+  padding: $fbSize/50;
+  color: #f4f4f4;
+}
