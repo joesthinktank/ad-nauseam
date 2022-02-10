@@ -16,7 +16,7 @@
     "firebase": "^7.14.1",
     "html2canvas": "^1.0.0-rc.5",
     "node-fetch": "^2.6.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-firebase-file-uploader": "^2.4.3",
